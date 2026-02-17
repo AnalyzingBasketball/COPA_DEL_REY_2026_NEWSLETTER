@@ -8,9 +8,9 @@ import pandas as pd
 
 # --- 1. CONFIGURACIÓN DE LOGOS ---
 # Tu logo original INTACTO
-URL_LOGO = "https://raw.githubusercontent.com/AnalyzingBasketball/acb-newsletter-bot/refs/heads/main/logo.png" 
+URL_LOGO = "https://raw.githubusercontent.com/AnalyzingBasketball/COPA_DEL_REY_2026_NEWSLETTER/refs/heads/main/logo.png" 
 # Pega aquí el enlace de la Copa que has subido
-URL_LOGO_COPA = "PEGA_AQUI_EL_ENLACE_RAW_DEL_LOGO_COPA" 
+URL_LOGO_COPA = "https://raw.githubusercontent.com/AnalyzingBasketball/COPA_DEL_REY_2026_NEWSLETTER/refs/heads/main/logo_copa_2026.png" 
 
 URL_BAJA = "https://analyzingbasketball.wixsite.com/home/baja"
 
