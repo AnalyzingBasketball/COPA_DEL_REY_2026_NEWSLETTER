@@ -6,8 +6,12 @@ import markdown
 import sys
 import pandas as pd
 
-# --- 1. CONFIGURACIÓN ---
-URL_LOGO = "https://raw.githubusercontent.com/AnalyzingBasketball/COPA_DEL_REY_2026_NEWSLETTER/refs/heads/main/logo.png"
+# --- 1. CONFIGURACIÓN DE LOGOS ---
+# Tu logo original INTACTO
+URL_LOGO = "https://raw.githubusercontent.com/AnalyzingBasketball/acb-newsletter-bot/refs/heads/main/logo.png" 
+# Pega aquí el enlace de la Copa que has subido
+URL_LOGO_COPA = "PEGA_AQUI_EL_ENLACE_RAW_DEL_LOGO_COPA" 
+
 URL_BAJA = "https://analyzingbasketball.wixsite.com/home/baja"
 
 gmail_user = os.environ.get("GMAIL_USER")
@@ -24,25 +28,19 @@ if not os.path.exists(ARCHIVO_MD):
     print(f"❌ Error: No se encuentra {ARCHIVO_MD}")
     sys.exit(1)
 
-# LEEMOS TODO EL CONTENIDO RESPETANDO ESPACIOS (Clave para listas Markdown)
+# LEEMOS TODO EL CONTENIDO RESPETANDO ESPACIOS
 with open(ARCHIVO_MD, "r", encoding="utf-8") as f:
     raw_content = f.read()
 
-# Dividimos en líneas pero manteniendo el formato
 lines = raw_content.split('\n')
 first_line = lines[0].strip() if lines else "Informe Copa del Rey"
 
 # LÓGICA DE ASUNTO CLICKBAIT
 if first_line.startswith("ASUNTO:"):
-    # 1. Extraemos el asunto "Clickbait"
     asunto_texto = first_line.replace("ASUNTO:", "").strip()
     asunto_email = f"🏀 {asunto_texto}"
-    
-    # 2. Quitamos la primera línea del cuerpo del mensaje para no repetirla
-    # Unimos el resto de líneas recuperando los saltos de línea
     md_content = "\n".join(lines[1:])
 else:
-    # Lógica de respaldo (por si la IA falla y no pone ASUNTO:)
     md_content = raw_content
     titulo_clean = first_line.replace('#', '').strip()
     asunto_email = f"🏆 Especial Copa del Rey: {titulo_clean}"
@@ -50,9 +48,9 @@ else:
 # --- 3. PREPARAR CAMPAÑA ---
 print("📥 Preparando campaña de Email...")
 
-# Convertimos a HTML (Markdown detectará bien las listas ahora)
 html_body = markdown.markdown(md_content)
 
+# DISEÑO EXACTO A LA CAPTURA
 plantilla_html_base = f"""
 <!DOCTYPE html>
 <html>
@@ -63,15 +61,20 @@ plantilla_html_base = f"""
 <body style='font-family: Helvetica, Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0;'>
     <div style='background-color: #ffffff; max-width: 600px; margin: 20px auto; border: 1px solid #dddddd; border-radius: 8px; overflow: hidden;'>
         
-        <div style='background-color: #0066FF; padding: 30px 20px; text-align: center;'>
-            <img src="{URL_LOGO}" alt="Analyzing Basketball" style="max-width: 150px; width: 100%; height: auto; display: block; margin: 0 auto;">
+        <div style='background-color: #0066FF; padding: 40px 20px; text-align: center;'>
+            <img src="{URL_LOGO}" alt="Analyzing Basketball" style="max-width: 180px; height: auto; display: inline-block;">
         </div>
 
         <div style='padding: 40px 30px; color: #333333; line-height: 1.6; font-size: 16px;'>
+            
+            <div style='text-align: center; margin-bottom: 25px;'>
+                <img src="{URL_LOGO_COPA}" alt="Copa del Rey 2026" style="max-width: 90px; height: auto; display: inline-block;">
+            </div>
+
             {html_body}
         </div>
 
-        <div style='background-color: #ffffff; padding: 20px; text-align: center; padding-bottom: 40px;'>
+        <div style='background-color: #ffffff; padding: 0px 20px 40px 20px; text-align: center;'>
             <a href="https://analyzingbasketball.wixsite.com/home/newsletter" 
                style='display: inline-block; background-color: #000000; color: #ffffff; padding: 14px 30px; text-decoration: none; font-weight: bold; font-size: 14px; letter-spacing: 1px; border-radius: 4px;'>
                 HOME
@@ -119,7 +122,6 @@ if url_suscriptores:
 
         if col_email:
             nuevos = df_subs[col_email].dropna().astype(str).unique().tolist()
-            # Filtro estricto: Debe tener @ y .
             nuevos = [e.strip() for e in nuevos if "@" in e and "." in e]
             
             count = 0
