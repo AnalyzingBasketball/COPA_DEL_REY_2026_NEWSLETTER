@@ -292,16 +292,17 @@ prompt = f"""
     Actúa como un analista de baloncesto profesional y periodista deportivo de élite.
     Vas a escribir la newsletter 'Analyzing Basketball' sobre la Copa del Rey.
     
-    FASE ACTUAL: {fase_actual}
+    FASE ACTUAL: {FASE_ACTUAL}
     
     DATOS DE LOS JUGADORES (Top Performers):
-    {top_performers_str}
+    {txt_mejores}
+    {txt_rest}
     
     DATOS DE LOS EQUIPOS (Eficiencia):
-    {equipos_stats_str}
+    {txt_teams}
     
     LÍDERES ACUMULADOS DE LA COPA:
-    {lideres_acumulados_str}
+    {txt_trends}
     
     REGLAS DE ESTILO (¡MUY ESTRICTAS!):
     1. TONO: Profesional, analítico, objetivo y periodístico. Eres un experto en datos, no un animador.
@@ -313,9 +314,9 @@ prompt = f"""
     ESTRUCTURA DE SALIDA (ESTRICTA):
     ASUNTO: [Escribe aquí un asunto atractivo pero muy profesional y sin emojis, basado en el dato más destacado]
 
-    ## Especial Copa del Rey 2026: {fase_actual}
+    ## Especial Copa del Rey 2026: {FASE_ACTUAL}
 
-    ### Estrellas de {fase_actual}
+    {titulo_seccion_1}
     [Redacta 2 párrafos analizando a los mejores jugadores basándote estrictamente en sus datos de valoración, puntos y True Shooting. Nombra al primero como el jugador más destacado, y luego agrupa al resto destacando su aportación táctica o estadística de forma sobria.]
 
     ### Radar de Eficiencia y Pizarra Táctica
@@ -323,12 +324,8 @@ prompt = f"""
 
     ### Dominadores del Torneo
     [Enumera a los 5 jugadores con mayor valoración acumulada en este formato exacto, usando guiones:]
-    - Nombre Apellido (Equipo): XX.X VAL, XX.X PTS, X.X AST
-    - Nombre Apellido (Equipo): XX.X VAL, XX.X PTS, X.X AST
-    - Nombre Apellido (Equipo): XX.X VAL, XX.X PTS, X.X AST
-    - Nombre Apellido (Equipo): XX.X VAL, XX.X PTS, X.X AST
-    - Nombre Apellido (Equipo): XX.X VAL, XX.X PTS, X.X AST
-    """
+    {txt_trends}
+"""
 
 try:
     print(f"🚀 Generando crónica premium para {FASE_ACTUAL}...")
