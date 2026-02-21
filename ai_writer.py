@@ -275,13 +275,13 @@ for _, row in hot.iterrows():
 # 6. LÓGICA DE TÍTULOS (ESTRELLAS VS MVP Y GRAMÁTICA)
 # ==============================================================================
 if FASE_ACTUAL == "Final":
-    titulo_seccion_1 = "### 👑 MVP de la Copa del Rey"
+    titulo_seccion_1 = "### MVP de la Copa del Rey"
     etiqueta_jugador = "MVP:"
 elif FASE_ACTUAL == "Semifinales":
-    titulo_seccion_1 = "### 🌟 Estrellas de las Semifinales"
+    titulo_seccion_1 = "### Estrellas de las Semifinales"
     etiqueta_jugador = "TOP PERFORMER(S):"
 else:
-    titulo_seccion_1 = "### 🌟 Estrellas de los Cuartos de Final"
+    titulo_seccion_1 = "### Estrellas de los Cuartos de Final"
     etiqueta_jugador = "TOP PERFORMER(S):"
 
 # ==============================================================================
