@@ -35,83 +35,21 @@ COACH_MAP = {
 # ==============================================================================
 CORRECCIONES_VIP = {
     # --- BARÇA (BAR) ---
-    "D. Brizuela": "Darío Brizuela", "D. González": "Dani González",
-    "J. Marcos": "Juani Marcos", "J. Parra": "Joel Parra",
-    "J. Vesely": "Jan Vesely", "K. Punter": "Kevin Punter",
-    "M. Cale": "Myles Cale", "M. Norris": "Miles Norris",
-    "N. Kusturica": "Nikola Kusturica", "N. Laprovittola": "Nico Laprovittola",
-    "S. Keita": "Sayon Keita", "T. Satoransky": "Tomas Satoransky",
-    "T. Shengelia": "Toko Shengelia", "W. Clyburn": "Will Clyburn",
-    "W. Hernangómez": "Willy Hernangómez", "Y. Fall": "Youssoupha Fall",
-
+    "D. Brizuela": "Darío Brizuela", "D. González": "Dani González", "J. Marcos": "Juani Marcos", "J. Parra": "Joel Parra", "J. Vesely": "Jan Vesely", "K. Punter": "Kevin Punter", "M. Cale": "Myles Cale", "M. Norris": "Miles Norris", "N. Kusturica": "Nikola Kusturica", "N. Laprovittola": "Nico Laprovittola", "S. Keita": "Sayon Keita", "T. Satoransky": "Tomas Satoransky", "T. Shengelia": "Toko Shengelia", "W. Clyburn": "Will Clyburn", "W. Hernangómez": "Willy Hernangómez", "Y. Fall": "Youssoupha Fall",
     # --- BASKONIA (BKN) ---
-    "C. Frisch": "Clément Frisch", "E. Omoruyi": "Eugene Omoruyi",
-    "G. Radzevicius": "Gytis Radzevicius", "H. Diallo": "Hamidou Diallo",
-    "K. Diop": "Khalifa Diop", "K. Simmons": "Kobi Simmons",
-    "L. Samanic": "Luka Samanic", "Luwawu-Cabarrot": "Timothé Luwawu-Cabarrot",
-    "M. Diakite": "Mamadi Diakite", "M. Howard": "Markus Howard",
-    "M. Nowell": "Markquis Nowell", "M. Spagnolo": "Matteo Spagnolo",
-    "R. Kurucs": "Rodions Kurucs", "R. Villar": "Rafa Villar",
-    "S. Joksimovic": "Stefan Joksimovic", "T. Forrest": "Trent Forrest",
-    "T. Sedekerskis": "Tadas Sedekerskis",
-
+    "C. Frisch": "Clément Frisch", "E. Omoruyi": "Eugene Omoruyi", "G. Radzevicius": "Gytis Radzevicius", "H. Diallo": "Hamidou Diallo", "K. Diop": "Khalifa Diop", "K. Simmons": "Kobi Simmons", "L. Samanic": "Luka Samanic", "Luwawu-Cabarrot": "Timothé Luwawu-Cabarrot", "M. Diakite": "Mamadi Diakite", "M. Howard": "Markus Howard", "M. Nowell": "Markquis Nowell", "M. Spagnolo": "Matteo Spagnolo", "R. Kurucs": "Rodions Kurucs", "R. Villar": "Rafa Villar", "S. Joksimovic": "Stefan Joksimovic", "T. Forrest": "Trent Forrest", "T. Sedekerskis": "Tadas Sedekerskis",
     # --- JOVENTUT BADALONA (JOV) ---
-    "A. Hanga": "Adam Hanga", "A. Tomic": "Ante Tomic",
-    "A. Torres": "Adrià Torres", "C. Hunt": "Cameron Hunt",
-    "F. Mauri": "Ferran Mauri", "G. Vives": "Guillem Vives",
-    "H. Drell": "Henri Drell", "L. Hakanson": "Ludde Hakanson",
-    "M. Allen": "Miguel Allen", "M. Ruzic": "Michael Ruzic",
-    "R. Rubio": "Ricky Rubio", "S. Birgander": "Simon Birgander",
-    "Y. Kraag": "Yannick Kraag",
-
+    "A. Hanga": "Adam Hanga", "A. Tomic": "Ante Tomic", "A. Torres": "Adrià Torres", "C. Hunt": "Cameron Hunt", "F. Mauri": "Ferran Mauri", "G. Vives": "Guillem Vives", "H. Drell": "Henri Drell", "L. Hakanson": "Ludde Hakanson", "M. Allen": "Miguel Allen", "M. Ruzic": "Michael Ruzic", "R. Rubio": "Ricky Rubio", "S. Birgander": "Simon Birgander", "Y. Kraag": "Yannick Kraag",
     # --- LA LAGUNA TENERIFE (TEN) ---
-    "A. Doornekamp": "Aaron Doornekamp", "B. Fitipaldo": "Bruno Fitipaldo",
-    "D. Bordón": "Diego Bordón", "F. Guerra": "Fran Guerra",
-    "G. Shermadini": "Giorgi Shermadini", "H. Alderete": "Hector Alderete",
-    "J. Fernández": "Jaime Fernández", "J. Sastre": "Joan Sastre",
-    "K. Kostadinov": "Konstantin Kostadinov", "L. Costa": "Lluís Costa",
-    "M. Huertas": "Marcelinho Huertas", "R. Giedraitis": "Rokas Giedraitis",
-    "T. Abromaitis": "Tim Abromaitis", "T. Scrubb": "Thomas Scrubb",
-    "W. Van Beck": "Wesley Van Beck",
-
+    "A. Doornekamp": "Aaron Doornekamp", "B. Fitipaldo": "Bruno Fitipaldo", "D. Bordón": "Diego Bordón", "F. Guerra": "Fran Guerra", "G. Shermadini": "Giorgi Shermadini", "H. Alderete": "Hector Alderete", "J. Fernández": "Jaime Fernández", "J. Sastre": "Joan Sastre", "K. Kostadinov": "Konstantin Kostadinov", "L. Costa": "Lluís Costa", "M. Huertas": "Marcelinho Huertas", "R. Giedraitis": "Rokas Giedraitis", "T. Abromaitis": "Tim Abromaitis", "T. Scrubb": "Thomas Scrubb", "W. Van Beck": "Wesley Van Beck",
     # --- REAL MADRID (RMB) ---
-    "A. Abalde": "Alberto Abalde", "A. Feliz": "Andrés Feliz",
-    "A. Len": "Alex Len", "C. Okeke": "Chuma Okeke",
-    "D. Kramer": "David Kramer", "F. Campazzo": "Facundo Campazzo",
-    "G. Deck": "Gabriel Deck", "G. Grinvalds": "Gunars Grinvalds",
-    "G. Procida": "Gabriele Procida", "I. Almansa": "Izan Almansa",
-    "M. Hezonja": "Mario Hezonja", "S. Llull": "Sergio Llull",
-    "T. Lyles": "Trey Lyles", "T. Maledon": "Théo Maledon",
-    "U. Garuba": "Usman Garuba", "W. Tavares": "Edy Tavares",
-
+    "A. Abalde": "Alberto Abalde", "A. Feliz": "Andrés Feliz", "A. Len": "Alex Len", "C. Okeke": "Chuma Okeke", "D. Kramer": "David Kramer", "F. Campazzo": "Facundo Campazzo", "G. Deck": "Gabriel Deck", "G. Grinvalds": "Gunars Grinvalds", "G. Procida": "Gabriele Procida", "I. Almansa": "Izan Almansa", "M. Hezonja": "Mario Hezonja", "S. Llull": "Sergio Llull", "T. Lyles": "Trey Lyles", "T. Maledon": "Théo Maledon", "U. Garuba": "Usman Garuba", "W. Tavares": "Edy Tavares",
     # --- UCAM MURCIA (UCM) ---
-    "D. Cacok": "Devontae Cacok", "D. DeJulius": "David DeJulius",
-    "D. Ennis": "Dylan Ennis", "D. García": "Dani García",
-    "E. Cate": "Emanuel Cate", "H. Sant-Roos": "Howard Sant-Roos",
-    "J. Radebaugh": "Jonah Radebaugh", "M. Diagné": "Moussa Diagné",
-    "M. Forrest": "Michael Forrest", "R. López": "Rubén López de la Torre",
-    "S. Raieste": "Sander Raieste", "T. Nakic": "Toni Nakic",
-    "W. Falk": "Wilhelm Falk", "Z. Hicks": "Zach Hicks",
-
+    "D. Cacok": "Devontae Cacok", "D. DeJulius": "David DeJulius", "D. Ennis": "Dylan Ennis", "D. García": "Dani García", "E. Cate": "Emanuel Cate", "H. Sant-Roos": "Howard Sant-Roos", "J. Radebaugh": "Jonah Radebaugh", "M. Diagné": "Moussa Diagné", "M. Forrest": "Michael Forrest", "R. López": "Rubén López de la Torre", "S. Raieste": "Sander Raieste", "T. Nakic": "Toni Nakic", "W. Falk": "Wilhelm Falk", "Z. Hicks": "Zach Hicks",
     # --- UNICAJA (UNI) ---
-    "A. Butajevas": "Arturas Butajevas", "A. Díaz": "Alberto Díaz",
-    "A. Rubit": "Augustine Rubit", "C. Audige": "Chase Audige",
-    "C. Duarte": "Chris Duarte", "D. Kravish": "David Kravish",
-    "E. Sulejmanovic": "Emir Sulejmanovic", "J. Barreiro": "Jonathan Barreiro",
-    "J. Webb": "James Webb III", "K. Perry": "Kendrick Perry",
-    "K. Tillie": "Killian Tillie", "N. Djedovic": "Nihad Djedovic",
-    "O. Balcerowski": "Olek Balcerowski", "T. Kalinoski": "Tyler Kalinoski",
-    "T. Pérez": "Tyson Pérez", "X. Castañeda": "Xavier Castañeda",
-
+    "A. Butajevas": "Arturas Butajevas", "A. Díaz": "Alberto Díaz", "A. Rubit": "Augustine Rubit", "C. Audige": "Chase Audige", "C. Duarte": "Chris Duarte", "D. Kravish": "David Kravish", "E. Sulejmanovic": "Emir Sulejmanovic", "J. Barreiro": "Jonathan Barreiro", "J. Webb": "James Webb III", "K. Perry": "Kendrick Perry", "K. Tillie": "Killian Tillie", "N. Djedovic": "Nihad Djedovic", "O. Balcerowski": "Olek Balcerowski", "T. Kalinoski": "Tyler Kalinoski", "T. Pérez": "Tyson Pérez", "X. Castañeda": "Xavier Castañeda",
     # --- VALENCIA BASKET (VBC) ---
-    "B. Badio": "Brancou Badio", "B. Key": "Braxton Key",
-    "D. Thompson": "Darius Thompson", "I. Iroegbu": "Ike Iroegbu",
-    "I. Nogués": "Isaac Nogués", "J. Montero": "Jean Montero",
-    "J. Pradilla": "Jaime Pradilla", "J. Puerto": "Josep Puerto",
-    "K. Taylor": "Kameron Taylor", "López-Arostegui": "Xabi López-Arostegui",
-    "M. Costello": "Matt Costello", "N. Reuvers": "Nate Reuvers",
-    "N. Sako": "Neal Sako", "O. Moore": "Omari Moore",
-    "S. de Larrea": "Sergio de Larrea", "Y. Sima": "Yankuba Sima"
+    "B. Badio": "Brancou Badio", "B. Key": "Braxton Key", "D. Thompson": "Darius Thompson", "I. Iroegbu": "Ike Iroegbu", "I. Nogués": "Isaac Nogués", "J. Montero": "Jean Montero", "J. Pradilla": "Jaime Pradilla", "J. Puerto": "Josep Puerto", "K. Taylor": "Kameron Taylor", "López-Arostegui": "Xabi López-Arostegui", "M. Costello": "Matt Costello", "N. Reuvers": "Nate Reuvers", "N. Sako": "Neal Sako", "O. Moore": "Omari Moore", "S. de Larrea": "Sergio de Larrea", "Y. Sima": "Yankuba Sima"
 }
 
 # ==============================================================================
@@ -191,7 +129,7 @@ for _, row in top_rest.iterrows():
     r_name = clean_name(row['Name'])
     txt_rest += f"- {r_name} ({get_team_name(row['Team'])}): {b(row['VAL'])} VAL.\n"
 
-# C. EQUIPOS (Ahora inyectando los entrenadores EXACTOS del COACH_MAP)
+# C. EQUIPOS
 team_agg = df_fase.groupby('Team').agg({
     'PTS': 'sum', 'Game_Poss': 'mean', 'Reb_T': 'sum', 'AST': 'sum', 'TO': 'sum'
 }).reset_index()
@@ -219,17 +157,27 @@ for _, row in hot.iterrows():
                    f"{b(row['VAL'], 1)} VAL, {b(row['PTS'], 1)} PTS, {b(row['AST'], 1)} AST.\n")
 
 # ==============================================================================
-# 6. LÓGICA DE TÍTULOS (LIMPIOS Y SIN EMOJIS)
+# 6. LÓGICA DE TÍTULOS E INSTRUCCIONES DE BÚSQUEDA
 # ==============================================================================
+instrucciones_especificas = ""
+
 if FASE_ACTUAL == "Final":
-    titulo_seccion_1 = "### MVP de la Copa del Rey"
+    titulo_seccion_1 = "### El MVP Oficial y las Claves de la Final"
+    instrucciones_especificas = """
+    INSTRUCCIONES EXCLUSIVAS PARA LA FINAL (USO OBLIGATORIO DE GOOGLE SEARCH):
+    1. BÚSQUEDA DEL MVP: Usa tu herramienta de búsqueda en Google para confirmar quién ha sido el MVP Oficial de la Copa del Rey de baloncesto 2026. Nómbralo en el primer párrafo y añade sus estadísticas destacadas o por qué se lo han dado.
+    2. EL CAMPEÓN Y SU CAMINO: Menciona explícitamente y con emoción al equipo que ha ganado la Final y haz un brevísimo apunte sobre cómo ha sido su camino hasta levantar el título.
+    3. JUGADAS DETERMINANTES: Usa tu búsqueda en Internet para encontrar 1 o 2 jugadas o momentos clave del partido (un triple decisivo para romper un parcial, un tapón, una actuación *clutch* en los últimos minutos) e intégralos en la crónica para dar contexto real a los fríos datos.
+    4. Analiza el RITMO DEL PARTIDO basándote en los datos estadísticos proporcionados (ORTG, posesiones).
+    5. Tono de "Gran Final": Transmite la tensión y el prestigio de levantar la Copa, combinando la épica periodística con tus datos de analítica avanzada.
+    """
 elif FASE_ACTUAL == "Semifinales":
     titulo_seccion_1 = "### Estrellas de las Semifinales"
 else:
     titulo_seccion_1 = "### Estrellas de los Cuartos de Final"
 
 # ==============================================================================
-# 7. GENERACIÓN IA (MODO EDITORIAL PREMIUM A PRUEBA DE BALAS)
+# 7. GENERACIÓN IA CON GOOGLE SEARCH ACTIVADO
 # ==============================================================================
 
 prompt = f"""
@@ -238,7 +186,7 @@ prompt = f"""
     
     FASE ACTUAL: {FASE_ACTUAL}
     
-    DATOS DE LOS JUGADORES (Top Performers):
+    DATOS DE LOS JUGADORES (Top Performers Estadísticos):
     {txt_mejores}
     {txt_rest}
     
@@ -248,34 +196,37 @@ prompt = f"""
     LÍDERES ACUMULADOS DE LA COPA:
     {txt_trends}
     
+    {instrucciones_especificas}
+    
     REGLAS DE ESTILO (¡MUY ESTRICTAS!):
     1. TONO Y AUDIENCIA: Profesional, analítico y objetivo. Eres un periodista deportivo experto escribiendo para una audiencia muy entendida en baloncesto en ESPAÑA.
     2. IDIOMA (ESPAÑOL DE ESPAÑA): Tienes prohibido usar vocabulario latinoamericano. NUNCA uses la palabra "volcada" (usa "mate"), ni "lanzamiento de personal" (usa "tiros libres"), ni "duela" (usa "parqué" o "cancha"). Escribe en castellano peninsular estricto.
-    3. ENTRENADORES Y ALUCINACIONES: En los DATOS DE LOS EQUIPOS se incluye el nombre de sus entrenadores actuales. Úsalos para enriquecer el análisis táctico (ej: "la pizarra de Sergio Scariolo", "los sistemas de Pedro Martínez"). ESTÁ ESTRICTAMENTE PROHIBIDO inventar nombres de entrenadores o datos que no aparezcan en la información proporcionada.
+    3. ENTRENADORES Y ALUCINACIONES: Usa los nombres de entrenadores proporcionados en los DATOS DE LOS EQUIPOS para enriquecer el análisis táctico. Salvo la información del MVP y jugadas clave (que DEBES buscar en Google si es la Final), NO inventes datos que no se te proporcionen.
     4. CERO EMOJIS (CRÍTICO): Está TOTALMENTE PROHIBIDO usar emojis en cualquier parte del texto. NO PUEDES USAR EMOJIS EN EL ASUNTO. NO PUEDES USAR EMOJIS EN LOS TÍTULOS. NO PUEDES USAR EMOJIS EN EL CUERPO DEL TEXTO. Un solo emoji arruinará el formato profesional de la newsletter.
     5. CERO COLEGUEO O DRAMA: No hables al lector en segunda persona ("sabes", "fíjate"). Usa la tercera persona ("se observa", "destaca"). Evita el dramatismo barato ("a vida o muerte") y las preguntas retóricas.
-    6. VOZ ACTIVA Y RITMO: Escribe siempre en voz activa ("Campazzo lideró...", no "El equipo fue liderado por Campazzo"). Alterna frases largas de análisis con oraciones cortas y contundentes para dar un ritmo de lectura natural y periodístico.
+    6. VOZ ACTIVA Y RITMO: Escribe siempre en voz activa ("Campazzo lideró...", no "El equipo fue liderado por Campazzo"). Alterna frases largas de análisis con oraciones cortas y contundentes.
     7. VOCABULARIO DE PARQUÉ: Usa terminología técnica real de baloncesto con naturalidad (spacing, pick & roll, mismatch, IQ, colapso defensivo, tiro tras bote, generación de ventajas, lado débil).
 
     ESTRUCTURA DE SALIDA (ESTRICTA):
-    ASUNTO: [Escribe aquí un asunto atractivo, muy profesional, basado en el dato más destacado y ESTRICTAMENTE SIN NINGÚN EMOJI]
+    ASUNTO: [Escribe aquí un asunto atractivo, muy profesional, que denote que es la Final, basado en el MVP/Campeón y ESTRICTAMENTE SIN NINGÚN EMOJI]
 
     ## Especial Copa del Rey 2026: {FASE_ACTUAL}
 
     {titulo_seccion_1}
-    [Redacta 2 párrafos analizando a los mejores jugadores basándote estrictamente en sus datos de valoración, puntos y True Shooting. Nombra al primero como el jugador más destacado, y luego agrupa al resto destacando su aportación táctica o estadística de forma sobria. RECUERDA: Español de España puro.]
+    [Redacta la crónica principal siguiendo las instrucciones (buscando al MVP real y las jugadas clave en internet). Combina la narrativa épica con el análisis del rendimiento estadístico aportado en los datos.]
 
     ### Radar de Eficiencia y Pizarra Táctica
-    [Redacta 2 párrafos analizando el rendimiento de los equipos. Usa los datos de Puntos por 100 posesiones, Asistencias o Pérdidas y menciona a sus entrenadores reales proporcionados. Analiza qué significa esto a nivel táctico de forma técnica y profesional.]
+    [Redacta el análisis del rendimiento de los equipos. Usa los datos de Puntos por 100 posesiones, Asistencias o Pérdidas y menciona a sus entrenadores reales proporcionados. Traduce esto a cómo fue el ritmo y el control táctico del partido.]
 
-    ### Dominadores del Torneo
-    [Enumera a los 5 jugadores con mayor valoración acumulada en este formato exacto, usando guiones:]
+    ### Dominadores del Torneo (Promedios Totales)
+    [Enumera a los 5 jugadores con mayor valoración acumulada de toda la Copa en este formato exacto, usando guiones:]
     {txt_trends}
 """
 
 try:
     print(f"🚀 Generando crónica premium para {FASE_ACTUAL}...")
-    model = genai.GenerativeModel(MODEL_NAME)
+    # ATENCIÓN AQUÍ: Se añade la herramienta de búsqueda en Google
+    model = genai.GenerativeModel(model_name=MODEL_NAME, tools="google_search_retrieval")
     response = model.generate_content(prompt)
     texto = response.text.replace(":\n-", ":\n\n-")
     guardar_salida(texto)
