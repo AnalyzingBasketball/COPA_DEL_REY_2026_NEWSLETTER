@@ -157,17 +157,17 @@ for _, row in hot.iterrows():
                    f"{b(row['VAL'], 1)} VAL, {b(row['PTS'], 1)} PTS, {b(row['AST'], 1)} AST.\n")
 
 # ==============================================================================
-# 6. LÓGICA DE TÍTULOS E INSTRUCCIONES DE BÚSQUEDA
+# 6. LÓGICA DE TÍTULOS E INSTRUCCIONES DE BÚSQUEDA (SIN BUSCADOR REAL)
 # ==============================================================================
 instrucciones_especificas = ""
 
 if FASE_ACTUAL == "Final":
-    titulo_seccion_1 = "### El MVP Oficial y las Claves de la Final"
+    titulo_seccion_1 = "### El MVP y las Claves de la Final"
     instrucciones_especificas = """
-    INSTRUCCIONES EXCLUSIVAS PARA LA FINAL (USO OBLIGATORIO DE GOOGLE SEARCH):
-    1. BÚSQUEDA DEL MVP: Usa tu herramienta de búsqueda en Google para confirmar quién ha sido el MVP Oficial de la Copa del Rey de baloncesto 2026. Nómbralo en el primer párrafo y añade sus estadísticas destacadas o por qué se lo han dado.
-    2. EL CAMPEÓN Y SU CAMINO: Menciona explícitamente y con emoción al equipo que ha ganado la Final y haz un brevísimo apunte sobre cómo ha sido su camino hasta levantar el título.
-    3. JUGADAS DETERMINANTES: Usa tu búsqueda en Internet para encontrar 1 o 2 jugadas o momentos clave del partido (un triple decisivo para romper un parcial, un tapón, una actuación *clutch* en los últimos minutos) e intégralos en la crónica para dar contexto real a los fríos datos.
+    INSTRUCCIONES EXCLUSIVAS PARA LA FINAL:
+    1. ANÁLISIS DEL MVP: Basa tu análisis del MVP de la Final ESTRICTAMENTE en el jugador con mayor valoración (VAL) de los datos proporcionados arriba. Nómbralo en el primer párrafo y analiza su hoja estadística.
+    2. EL CAMPEÓN: Nombra al equipo de ese jugador como el campeón virtual de la Final.
+    3. JUGADAS DETERMINANTES: Basándote en el perfil estadístico de los mejores jugadores, recrea de forma realista y coherente 1 o 2 momentos clave del partido para dar contexto a los fríos datos.
     4. Analiza el RITMO DEL PARTIDO basándote en los datos estadísticos proporcionados (ORTG, posesiones).
     5. Tono de "Gran Final": Transmite la tensión y el prestigio de levantar la Copa, combinando la épica periodística con tus datos de analítica avanzada.
     """
@@ -177,7 +177,7 @@ else:
     titulo_seccion_1 = "### Estrellas de los Cuartos de Final"
 
 # ==============================================================================
-# 7. GENERACIÓN IA CON GOOGLE SEARCH ACTIVADO
+# 7. GENERACIÓN IA SIN HERRAMIENTAS EXTERNAS
 # ==============================================================================
 
 prompt = f"""
@@ -208,12 +208,12 @@ prompt = f"""
     7. VOCABULARIO DE PARQUÉ: Usa terminología técnica real de baloncesto con naturalidad (spacing, pick & roll, mismatch, IQ, colapso defensivo, tiro tras bote, generación de ventajas, lado débil).
 
     ESTRUCTURA DE SALIDA (ESTRICTA):
-    ASUNTO: [Escribe aquí un asunto atractivo, muy profesional, que denote que es la Final, basado en el MVP/Campeón y ESTRICTAMENTE SIN NINGÚN EMOJI]
+    ASUNTO: [Escribe aquí un asunto atractivo, muy profesional, que denote la fase, basado en los mejores datos y ESTRICTAMENTE SIN NINGÚN EMOJI]
 
     ## Especial Copa del Rey 2026: {FASE_ACTUAL}
 
     {titulo_seccion_1}
-    [Redacta la crónica principal siguiendo las instrucciones (buscando al MVP real y las jugadas clave en internet). Combina la narrativa épica con el análisis del rendimiento estadístico aportado en los datos.]
+    [Redacta la crónica principal siguiendo las instrucciones, basándote exclusivamente en los datos aportados. Combina la narrativa épica con el análisis del rendimiento estadístico.]
 
     ### Radar de Eficiencia y Pizarra Táctica
     [Redacta el análisis del rendimiento de los equipos. Usa los datos de Puntos por 100 posesiones, Asistencias o Pérdidas y menciona a sus entrenadores reales proporcionados. Traduce esto a cómo fue el ritmo y el control táctico del partido.]
@@ -225,8 +225,8 @@ prompt = f"""
 
 try:
     print(f"🚀 Generando crónica premium para {FASE_ACTUAL}...")
-    # ATENCIÓN AQUÍ: Corrección de la herramienta de Google Search aplicada
-    model = genai.GenerativeModel(model_name=MODEL_NAME, tools="google_search")
+    # SE ELIMINÓ tools="google_search" PARA QUE NO DE ERROR
+    model = genai.GenerativeModel(model_name=MODEL_NAME)
     response = model.generate_content(prompt)
     texto = response.text.replace(":\n-", ":\n\n-")
     guardar_salida(texto)
